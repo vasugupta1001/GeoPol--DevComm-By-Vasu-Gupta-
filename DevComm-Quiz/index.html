@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Affairs & Geopolitics Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="main-wrapper">
+        <header class="quiz-header">
+            <span class="badge">International Summit 2026</span>
+            <h1>Global Geopolitics Intelligence Assessment</h1>
+            <p>Test your knowledge on international relations, diplomatic summits, global governance, and world treaties.</p>
+            <div class="sticky-progress">
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <span id="progress-text">0 of 20 Answered</span>
+            </div>
+        </header>
+
+        <form id="quiz-form">
+            <div class="question-card" id="block-q1">
+                <div class="q-number">Question 01</div>
+                <p class="question-text">Where are the headquarters of the United Nations located?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q1" value="A" onclick="updateProgress()"> Geneva, Switzerland</label>
+                    <label class="option-btn"><input type="radio" name="q1" value="B" onclick="updateProgress()"> New York City, USA</label>
+                    <label class="option-btn"><input type="radio" name="q1" value="C" onclick="updateProgress()"> Vienna, Austria</label>
+                    <label class="option-btn"><input type="radio" name="q1" value="D" onclick="updateProgress()"> The Hague, Netherlands</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q2">
+                <div class="q-number">Question 02</div>
+                <p class="question-text">Which country hosted the 2023 G20 Summit under the presidency theme "Vasudhaiva Kutumbakam"?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q2" value="A" onclick="updateProgress()"> Indonesia</label>
+                    <label class="option-btn"><input type="radio" name="q2" value="B" onclick="updateProgress()"> Brazil</label>
+                    <label class="option-btn"><input type="radio" name="q2" value="C" onclick="updateProgress()"> India</label>
+                    <label class="option-btn"><input type="radio" name="q2" value="D" onclick="updateProgress()"> South Africa</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q3">
+                <div class="q-number">Question 03</div>
+                <p class="question-text">Which European country officially joined NATO in March 2024 as its 32nd member state?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q3" value="A" onclick="updateProgress()"> Finland</label>
+                    <label class="option-btn"><input type="radio" name="q3" value="B" onclick="updateProgress()"> Sweden</label>
+                    <label class="option-btn"><input type="radio" name="q3" value="C" onclick="updateProgress()"> Ukraine</label>
+                    <label class="option-btn"><input type="radio" name="q3" value="D" onclick="updateProgress()"> Austria</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q4">
+                <div class="q-number">Question 04</div>
+                <p class="question-text">Which economic intergovernmental alliance officially expanded its membership in January 2024 to include Egypt, Ethiopia, Iran, and the UAE?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q4" value="A" onclick="updateProgress()"> ASEAN</label>
+                    <label class="option-btn"><input type="radio" name="q4" value="B" onclick="updateProgress()"> G7</label>
+                    <label class="option-btn"><input type="radio" name="q4" value="C" onclick="updateProgress()"> BRICS</label>
+                    <label class="option-btn"><input type="radio" name="q4" value="D" onclick="updateProgress()"> OPEC</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q5">
+                <div class="q-number">Question 05</div>
+                <p class="question-text">Where is the seat of the International Court of Justice (ICJ)?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q5" value="A" onclick="updateProgress()"> Brussels</label>
+                    <label class="option-btn"><input type="radio" name="q5" value="B" onclick="updateProgress()"> Geneva</label>
+                    <label class="option-btn"><input type="radio" name="q5" value="C" onclick="updateProgress()"> The Hague</label>
+                    <label class="option-btn"><input type="radio" name="q5" value="D" onclick="updateProgress()"> Strasbourg</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q6">
+                <div class="q-number">Question 06</div>
+                <p class="question-text">Which maritime choke point connects the Persian Gulf to the Gulf of Oman and handles a massive portion of global petroleum shipment?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q6" value="A" onclick="updateProgress()"> Strait of Malacca</label>
+                    <label class="option-btn"><input type="radio" name="q6" value="B" onclick="updateProgress()"> Bab-el-Mandeb</label>
+                    <label class="option-btn"><input type="radio" name="q6" value="C" onclick="updateProgress()"> Suez Canal</label>
+                    <label class="option-btn"><input type="radio" name="q6" value="D" onclick="updateProgress()"> Strait of Hormuz</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q7">
+                <div class="q-number">Question 07</div>
+                <p class="question-text">The QUAD security dialogue comprises the United States, India, Japan, and which fourth country?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q7" value="A" onclick="updateProgress()"> Australia</label>
+                    <label class="option-btn"><input type="radio" name="q7" value="B" onclick="updateProgress()"> South Korea</label>
+                    <label class="option-btn"><input type="radio" name="q7" value="C" onclick="updateProgress()"> United Kingdom</label>
+                    <label class="option-btn"><input type="radio" name="q7" value="D" onclick="updateProgress()"> Canada</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q8">
+                <div class="q-number">Question 08</div>
+                <p class="question-text">How many permanent members hold veto power on the United Nations Security Council (UNSC)?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q8" value="A" onclick="updateProgress()"> 10</label>
+                    <label class="option-btn"><input type="radio" name="q8" value="B" onclick="updateProgress()"> 5</label>
+                    <label class="option-btn"><input type="radio" name="q8" value="C" onclick="updateProgress()"> 7</label>
+                    <label class="option-btn"><input type="radio" name="q8" value="D" onclick="updateProgress()"> 15</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q9">
+                <div class="q-number">Question 09</div>
+                <p class="question-text">What international landmark environmental treaty was adopted in 2015 to combat global climate change?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q9" value="A" onclick="updateProgress()"> Kyoto Protocol</label>
+                    <label class="option-btn"><input type="radio" name="q9" value="B" onclick="updateProgress()"> Montreal Accord</label>
+                    <label class="option-btn"><input type="radio" name="q9" value="C" onclick="updateProgress()"> Paris Agreement</label>
+                    <label class="option-btn"><input type="radio" name="q9" value="D" onclick="updateProgress()"> Geneva Convention</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q10">
+                <div class="q-number">Question 10</div>
+                <p class="question-text">Which international financial organization has traditionally been led by a European Managing Director, while the World Bank presidency has traditionally been held by an American?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q10" value="A" onclick="updateProgress()"> World Trade Organization (WTO)</label>
+                    <label class="option-btn"><input type="radio" name="q10" value="B" onclick="updateProgress()"> International Monetary Fund (IMF)</label>
+                    <label class="option-btn"><input type="radio" name="q10" value="C" onclick="updateProgress()"> Bank for International Settlements</label>
+                    <label class="option-btn"><input type="radio" name="q10" value="D" onclick="updateProgress()"> Asian Development Bank</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q11">
+                <div class="q-number">Question 11</div>
+                <p class="question-text">Which city serves as the principal seat of the European Commission and the Council of the European Union?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q11" value="A" onclick="updateProgress()"> Paris, France</label>
+                    <label class="option-btn"><input type="radio" name="q11" value="B" onclick="updateProgress()"> Berlin, Germany</label>
+                    <label class="option-btn"><input type="radio" name="q11" value="C" onclick="updateProgress()"> Brussels, Belgium</label>
+                    <label class="option-btn"><input type="radio" name="q11" value="D" onclick="updateProgress()"> Amsterdam, Netherlands</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q12">
+                <div class="q-number">Question 12</div>
+                <p class="question-text">Which canal serves as the major human-made trade passage connecting the Atlantic and Pacific Oceans?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q12" value="A" onclick="updateProgress()"> Suez Canal</label>
+                    <label class="option-btn"><input type="radio" name="q12" value="B" onclick="updateProgress()"> Panama Canal</label>
+                    <label class="option-btn"><input type="radio" name="q12" value="C" onclick="updateProgress()"> Kiel Canal</label>
+                    <label class="option-btn"><input type="radio" name="q12" value="D" onclick="updateProgress()"> Corinth Canal</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q13">
+                <div class="q-number">Question 13</div>
+                <p class="question-text">How is the presidency of the Council of the European Union allocated?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q13" value="A" onclick="updateProgress()"> Member states rotate turn by turn</label>
+                    <label class="option-btn"><input type="radio" name="q13" value="B" onclick="updateProgress()"> Permanent German leadership</label>
+                    <label class="option-btn"><input type="radio" name="q13" value="C" onclick="updateProgress()"> Elected every five years</label>
+                    <label class="option-btn"><input type="radio" name="q13" value="D" onclick="updateProgress()"> Appointed by NATO</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q14">
+                <div class="q-number">Question 14</div>
+                <p class="question-text">Which international organization administers global trade rules and provides a framework for resolving international trade disputes?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q14" value="A" onclick="updateProgress()"> World Economic Forum</label>
+                    <label class="option-btn"><input type="radio" name="q14" value="B" onclick="updateProgress()"> World Trade Organization (WTO)</label>
+                    <label class="option-btn"><input type="radio" name="q14" value="C" onclick="updateProgress()"> UNCTAD</label>
+                    <label class="option-btn"><input type="radio" name="q14" value="D" onclick="updateProgress()"> International Chamber of Commerce</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q15">
+                <div class="q-number">Question 15</div>
+                <p class="question-text">Which intergovernmental organization coordinates petroleum policies among its member countries and works to promote oil-market stability?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q15" value="A" onclick="updateProgress()"> IAEA</label>
+                    <label class="option-btn"><input type="radio" name="q15" value="B" onclick="updateProgress()"> OPEC</label>
+                    <label class="option-btn"><input type="radio" name="q15" value="C" onclick="updateProgress()"> IEA</label>
+                    <label class="option-btn"><input type="radio" name="q15" value="D" onclick="updateProgress()"> OECD</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q16">
+                <div class="q-number">Question 16</div>
+                <p class="question-text">Where is the annual World Economic Forum (WEF) summit held every winter?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q16" value="A" onclick="updateProgress()"> Davos, Switzerland</label>
+                    <label class="option-btn"><input type="radio" name="q16" value="B" onclick="updateProgress()"> Munich, Germany</label>
+                    <label class="option-btn"><input type="radio" name="q16" value="C" onclick="updateProgress()"> Aspen, USA</label>
+                    <label class="option-btn"><input type="radio" name="q16" value="D" onclick="updateProgress()"> Zurich, Switzerland</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q17">
+                <div class="q-number">Question 17</div>
+                <p class="question-text">What agreement established the modern legal foundation for international diplomatic immunity in 1961?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q17" value="A" onclick="updateProgress()"> Treaty of Versailles</label>
+                    <label class="option-btn"><input type="radio" name="q17" value="B" onclick="updateProgress()"> Vienna Convention on Diplomatic Relations</label>
+                    <label class="option-btn"><input type="radio" name="q17" value="C" onclick="updateProgress()"> Geneva Convention IV</label>
+                    <label class="option-btn"><input type="radio" name="q17" value="D" onclick="updateProgress()"> UN Charter</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q18">
+                <div class="q-number">Question 18</div>
+                <p class="question-text">Which regional intergovernmental organization promotes economic growth, regional stability, and cooperation among Southeast Asian nations?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q18" value="A" onclick="updateProgress()"> SAARC</label>
+                    <label class="option-btn"><input type="radio" name="q18" value="B" onclick="updateProgress()"> APEC</label>
+                    <label class="option-btn"><input type="radio" name="q18" value="C" onclick="updateProgress()"> ASEAN</label>
+                    <label class="option-btn"><input type="radio" name="q18" value="D" onclick="updateProgress()"> BIMSTEC</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q19">
+                <div class="q-number">Question 19</div>
+                <p class="question-text">The African Union (AU) was officially added as a permanent member to which major international grouping in 2023?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q19" value="A" onclick="updateProgress()"> G7</label>
+                    <label class="option-btn"><input type="radio" name="q19" value="B" onclick="updateProgress()"> G20</label>
+                    <label class="option-btn"><input type="radio" name="q19" value="C" onclick="updateProgress()"> OECD</label>
+                    <label class="option-btn"><input type="radio" name="q19" value="D" onclick="updateProgress()"> CPTPP</label>
+                </div>
+            </div>
+
+            <div class="question-card" id="block-q20">
+                <div class="q-number">Question 20</div>
+                <p class="question-text">Which United Nations programme, headquartered in Rome, Italy, works to combat global hunger?</p>
+                <div class="options-grid">
+                    <label class="option-btn"><input type="radio" name="q20" value="A" onclick="updateProgress()"> UNICEF</label>
+                    <label class="option-btn"><input type="radio" name="q20" value="B" onclick="updateProgress()"> World Food Programme (WFP)</label>
+                    <label class="option-btn"><input type="radio" name="q20" value="C" onclick="updateProgress()"> UNHCR</label>
+                    <label class="option-btn"><input type="radio" name="q20" value="D" onclick="updateProgress()"> UNESCO</label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="checkAnswers()">Submit Diplomatic Assessment</button>
+        </form>
+
+        <div id="result-modal" class="modal">
+            <div class="modal-content">
+                <div class="score-circle">
+                    <span id="final-percentage">0%</span>
+                </div>
+                <h2 id="result-title">Assessment Complete</h2>
+                <p id="result-score-text">You scored 0 out of 20</p>
+                <p id="result-feedback"></p>
+                <button class="retry-btn" onclick="resetQuiz()">Review Responses</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
